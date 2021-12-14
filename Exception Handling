@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Exception_han {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        try {
+
+            int a=s.nextInt();
+            int b=s.nextInt();
+            int arr[]={122,45,67,89,90};
+            int index =s.nextInt();
+            System.out.println(a / b);      
+            System.out.println(arr[index]);
+
+
+        }
+        catch(ArrayIndexOutOfBoundsException obj)
+        {
+            System.out.println(obj);
+        }
+        catch(IllegalAccessError obj){
+            System.out.println(obj);
+        }
+        catch(ArithmeticException obj){     
+            System.out.println(obj);
+        }
+
+        catch(Exception obj){
+            System.out.println(obj);
+        }
+
+ {
+            System.out.println("Inside finally Block");
+        }
+
+
+        System.out.println("End of the main");
+    }
+}
