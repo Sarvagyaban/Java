@@ -1,0 +1,8 @@
+public class Wrapper_class
+{
+    public static void main(String[] args) 
+    {
+        Integer obj =Integer.valueOf(60);        
+        Integer obj1 =Integer.valueOf(60);
+     }
+}
